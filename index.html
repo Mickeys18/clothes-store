@@ -29,8 +29,10 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Elevate Your Style</h1>
-            <p>Designed by Group 4 Developers</p>
-            <a href="#shop" class="btn">Start Shopping</a>
+            <p>Exclusive Collections by Group 4</p>
+            <div class="hero-btn-container">
+                <a href="#shop" class="btn">Start Shopping</a>
+            </div>
         </div>
     </header>
 
@@ -41,24 +43,20 @@
     </section>
 
     <section id="about" class="about-section">
-        <div class="container">
+        <div class="about-container">
             <h2>Meet Group 4</h2>
-            <p>We are a team of 11 dedicated developers based in Mombasa, working to redefine online shopping through interactive technology.</p>
-            <div class="team-badge">
-                <i class="fas fa-users"></i>
-                <span>11 Members Strong</span>
-            </div>
+            <p>We are a dedicated team of developers based in Mombasa, committed to redefining the online shopping experience through interactive technology and seamless user interfaces.</p>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
-        <p>Questions? Reach out to Group 4!</p>
+        <p>Questions? Reach out to the team!</p>
         <form id="contact-form" onsubmit="handleContact(event)">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="How can we help?" rows="4" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Write your message here..." rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Send Message</button>
         </form>
     </section>
 
