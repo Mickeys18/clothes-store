@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group 4 | Clothes Store</title>
+    <title>Group 4 | Premium Clothes Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -14,8 +14,12 @@
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#shop">Shop</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="search-box">
+            <input type="text" id="product-search" placeholder="Search clothes..." onkeyup="searchProducts()">
+        </div>
         <div class="cart-icon">
             <i class="fas fa-shopping-cart"></i>
             <span id="cart-count">0</span>
@@ -24,9 +28,9 @@
 
     <header class="hero">
         <div class="hero-content">
-            <h1>Premium Style for Group 4</h1>
-            <p>Interactive. Modern. Elegant.</p>
-            <a href="#shop" class="btn">Explore Shop</a>
+            <h1>Elevate Your Style</h1>
+            <p>Designed by Group 4 Developers</p>
+            <a href="#shop" class="btn">Start Shopping</a>
         </div>
     </header>
 
@@ -39,12 +43,23 @@
     <section id="about" class="about-section">
         <div class="container">
             <h2>Meet Group 4</h2>
-            <p>We are a team of 11 dedicated developers redefining online shopping in Mombasa. Our mission is to combine sleek design with interactive functionality.</p>
+            <p>We are a team of 11 dedicated developers based in Mombasa, working to redefine online shopping through interactive technology.</p>
             <div class="team-badge">
                 <i class="fas fa-users"></i>
                 <span>11 Members Strong</span>
             </div>
         </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Questions? Reach out to Group 4!</p>
+        <form id="contact-form" onsubmit="handleContact(event)">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="How can we help?" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <footer>
